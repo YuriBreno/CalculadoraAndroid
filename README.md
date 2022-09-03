@@ -1,8 +1,6 @@
 # CalculadoraAndroid
 Aplicação android de uma calculadora simples.
 
-# Calculadora Android
-Aplicação android de uma calculadora simples.
 
 
  <p align="center">
