@@ -1,0 +1,74 @@
+package com.example.projetoy;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    private EditText editText_num1;
+    private EditText editText_num2;
+    private EditText resultado;
+    private Button botao;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        editText_num1 = findViewById(R.id.editText_num1);
+        editText_num2 = findViewById(R.id.editText_num2);
+        resultado = findViewById(R.id.Resultado);
+        botao = findViewById(R.id.botao);
+
+    }
+
+    public void calcular(View v){
+
+        int num1 = Integer.parseInt(editText_num1.getText().toString());
+        int num2 = Integer.parseInt(editText_num2.getText().toString());
+
+        resultado.setText(String.valueOf(num1 + num2));
+
+
+    }
+
+    public void subtrair(View v){
+
+        int num1 = Integer.parseInt(editText_num1.getText().toString());
+        int num2 = Integer.parseInt(editText_num2.getText().toString());
+
+        resultado.setText(String.valueOf(num1 - num2));
+
+    }
+
+    public void dividir(View v){
+
+        double num1 = Double.valueOf(editText_num1.getText().toString());
+        double num2 = Double.valueOf(editText_num2.getText().toString());
+
+        if(num2 == 0 || num1 == 0){
+            Toast.makeText(MainActivity.this, "Não é possível dividir por 0 :(", Toast.LENGTH_LONG).show();
+        }else{
+            resultado.setText(String.valueOf(num1 / num2));
+        }
+
+
+
+
+
+    }
+
+    public void multiplicar(View v){
+
+        int num1 = Integer.parseInt(editText_num1.getText().toString());
+        int num2 = Integer.parseInt(editText_num2.getText().toString());
+
+        resultado.setText(String.valueOf(num1 * num2));
+
+    }
+}
