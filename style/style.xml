@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ContainerComponents">
+
+        <item name="android:background">@drawable/container_arredondamento</item>
+
+    </style>
+
+    <style name="Edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/edit_text</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_color</item>
+
+    </style>
+
+
+</resources>
