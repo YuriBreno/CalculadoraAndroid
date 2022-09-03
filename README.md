@@ -6,6 +6,6 @@ Aplicação android de uma calculadora simple.
 
 
  <p align="center">
-  <img width="280px" src= "gifs/gifAndroid.gif">
+  <img width="380px" height="100px"src= "gifs/gifAndroid.gif">
  </p>      
        
